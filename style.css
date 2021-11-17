@@ -1,0 +1,44 @@
+html {
+	box-sizing: border-box;
+}
+*,
+:after,
+:before {
+	box-sizing: inherit;
+}
+
+:root {
+    --hlavni-barva: #5b828e;
+    --barva-nadpisu: #bbcfd7;
+    --vedlejsi-barva:#d2c8bc;
+    --barva-textu: #ac7e62;
+}
+
+body {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.obsah {
+    max-width: 600px;
+    margin: auto;
+    padding: 0.1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+header {
+    background-color: var(--hlavni-barva);
+    color: var(--barva-nadpisu);
+    padding: 20px;
+}
+
+
+.udaje {
+    text-align: left;
+    background-color: var(--vedlejsi-barva);
+    color: var(--barva-textu);
+    padding: 20px;
+}

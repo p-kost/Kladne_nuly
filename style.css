@@ -7,12 +7,6 @@ html {
 	box-sizing: inherit;
 }
 
-:root {
-    --hlavni-barva: #5b828e;
-    --barva-nadpisu: #bbcfd7;
-    --vedlejsi-barva:#d2c8bc;
-    --barva-textu: #ac7e62;
-}
 
 body {
     text-align: center;
@@ -23,38 +17,95 @@ body {
 .obsah {
     max-width: 600px;
     margin: auto;
-    padding: 0.1px;
     box-shadow: 0px 10px 13px -7px #000000, 0px 0px 37px 5px rgba(0,0,0,0)
-                }
+    }
 
 
 header {
-   /* background-color: var(--hlavni-barva);
-    color: var(--barva-nadpisu);  */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 0px -20px,
                 rgba(0, 0, 0, 0.3) 0px 0px 0px -30px,
                 rgba(10, 37, 64, 0.35) 0px 0px 6px 0px;;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: auto;
 }
-
 
 .udaje {
     text-align: left;
-/*    background-color: var(--vedlejsi-barva);
-    color: var(--barva-textu); */
-    padding: 20px;
+    padding: 2em 1em 3em 1em;
+}  
+
+.nazev {
+    display: none;
 }
 
-  /* ----------- Mensi obrazovky ---------- */
+.udaje__popisek {
+    font-weight: bold;  
+}
 
-@media (max-width: 900px) {
+.udaje__popisek::after {
+    content: ": ";
+}
+
+.udaje__hodnota {
+    margin: 0;
+    padding: 0.2em 0 1em 0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+  /* ----------- Vetsi obrazovky ---------- */
+
+  @media (min-width: 600px) {
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: auto;
+    }
 
     .nazev {
-        display: none;
+        display: grid;
+    }
+
+    .udaje {
+        padding: 2em 1em 6em 1em;
+    }  
+
+    .udaje__nadpis {
+        text-align: center;
+    }
+    
+    .udaje__seznam {
+        padding: 0.5em;
+    }
+    
+    .udaje__popisek {
+        float: left;
+        clear: left;
+        width: 100px;
+        text-align: right;
+        font-weight: bold;
+        padding: 0.2 0 0.5em 0;
+        margin: 0 0 0 20px;
+    
+    }
+    
+    .udaje__popisek::after {
+        content: ": ";
+    }
+    
+    .udaje__hodnota {
+        float: left;
+        margin: 0 0 0 20px;
+        padding: 0 0 0.5em 0;
     }
 
 }

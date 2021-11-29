@@ -24,21 +24,37 @@ body {
     max-width: 600px;
     margin: auto;
     padding: 0.1px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-                  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 37px 5px rgba(0,0,0,0)
+                }
+
 
 header {
-    background-color: var(--hlavni-barva);
-    color: var(--barva-nadpisu);
+   /* background-color: var(--hlavni-barva);
+    color: var(--barva-nadpisu);  */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 0px -20px,
+                rgba(0, 0, 0, 0.3) 0px 0px 0px -30px,
+                rgba(10, 37, 64, 0.35) 0px 0px 6px 0px;;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
 }
 
 
 .udaje {
     text-align: left;
-    background-color: var(--vedlejsi-barva);
-    color: var(--barva-textu);
+/*    background-color: var(--vedlejsi-barva);
+    color: var(--barva-textu); */
     padding: 20px;
+}
+
+  /* ----------- Mensi obrazovky ---------- */
+
+@media (max-width: 900px) {
+
+    .nazev {
+        display: none;
+    }
+
 }

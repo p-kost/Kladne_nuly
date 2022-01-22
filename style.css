@@ -17,7 +17,7 @@ body {
 .obsah {
     max-width: 600px;
     margin: auto;
-    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 37px 5px rgba(0,0,0,0)
+/*    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 37px 5px rgba(0,0,0,0)  */
     }
 
 
@@ -32,10 +32,6 @@ header {
     text-align: left;
     padding: 2em 1em 3em 1em;
 }  
-
-.nazev {
-    display: none;
-}
 
 .udaje__popisek {
     font-weight: bold;  
@@ -71,9 +67,7 @@ a:hover {
         width: auto;
     }
 
-    .nazev {
-        display: grid;
-    }
+    
 
     .udaje {
         padding: 2em 1em 6em 1em;

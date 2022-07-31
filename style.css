@@ -37,20 +37,41 @@ body {
     width: auto;
 }
 
+.o_nas__nadpis {
+    display: none;
+}
+
+
+.download_button {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid var(--barva-logo);;
+    color:var(--barva-logo);
+    margin: 50px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.download_button:hover {
+    background-color: rgb(236, 235, 235);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .udaje {
     text-align: left;
     padding: 2em 1em 3em 1em;
 }  
 
-.udaje__popisek {
+.kontakty__popisek {
     font-weight: 400;  
 }
 
-.udaje__popisek::after {
+.kontakty__popisek::after {
     content: ": ";
 }
 
-.udaje__hodnota {
+.kontakty__hodnota {
     margin: 0;
     padding: 0.2em 0 1em 0;
 }
@@ -63,6 +84,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
+
 
   /* ----------- Tablety ---------- */
 

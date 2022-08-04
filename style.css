@@ -72,11 +72,7 @@ p {
     background-color: var(--barva-svetle-seda);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-.udaje {
-    text-align: left;
-    padding: 2em 1em 3em 1em;
-}  
+ 
 
 .kontakty__popisek {
     font-weight: 600;  
@@ -103,30 +99,64 @@ a:hover {
 
 
 
-  /* ----------- Tablety ---------- 
+  /* ----------- Tablety ---------- */
 
   @media (min-width: 600px) {
 
-    padding pro body
+    body {
+        padding: 0px 80px;
+    }
 
     .logo {
-        background-image: url(obrazky/Kladne_Nuly-naSirku.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         min-height: 200px;
         width: auto;
     }
 
-    .udaje {
+
+}
+
+
+ /* ----------- PC ---------- */
+
+
+ @media (min-width: 950px) {
+
+
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .wrapper {
+        margin: 60px 0px;
+        max-width:none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+        flex-direction: row-reverse;    
+        padding: 0px 30px; 
+    }
+
+
+ /*   .kontakty {
         padding: 2em 1em 6em 1em;
+        text-align: left;
     }  
+*/
+    .kontakty {
+        text-align: left;
+        padding: 2em 1em 3em 1em;
+    } 
+
+    .kontakty__nadpis {
+        text-align: center;
+    }
     
-    .udaje__seznam {
+    .kontakty__seznam {
         padding: 0.5em;
     }
     
-    .udaje__popisek {
+    .kontakty__popisek {
         float: left;
         clear: left;
         width: 100px;
@@ -136,33 +166,18 @@ a:hover {
     
     }
     
-    .udaje__popisek::after {
+    .kontakty__popisek::after {
         content: ": ";
     }
     
-    .udaje__hodnota {
+    .kontakty__hodnota {
         float: left;
         margin: 0 0 0 20px;
         padding: 0 0 0.5em 0;
     }
 
-}
 
-
- /* ----------- PC ---------- 
-
-
- @media (min-width: 900px) {
-
-    .obsah {
-        margin-top: 80px;
-        max-width:none;
-        display: flex;
-        align-items: center;
-        justify-content: center;        
-    }
-
-    .udaje {
+    .kontakty {
         padding: 0;
     }
 
@@ -170,6 +185,5 @@ a:hover {
         min-width: 250px;
         height: auto;
     }
-}
 
-*/
+}

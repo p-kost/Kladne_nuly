@@ -8,32 +8,48 @@ html {
 }
 
 :root {
-	--barva-logo: #0f1728;
+	--barva-logo: #101829;
+    --barva-bila: #ffffff;
+    --barva-svetle-seda: #dee1e7;
 }
 
 
 body {
     text-align: center;
-    padding: 30px;
-    font-family: urbane-rounded, sans-serif;
-    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     font-style: normal;
+    font-size: 18px;
     color: var(--barva-logo);
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
+p {
+    padding: 10px 30px 0px 30px;
+    text-align: justify;
+}
+
+/*
 .obsah {
     max-width: 600px;
     margin: auto;
 }
+*/
 
 .logo {
-    background-image: url(obrazky/Kladne_Nuly-naVysku.svg);
+    padding: 30px;
+/*   background-color: var(--barva-logo);  */
+    margin: 40px 20px;
+}
+
+.logo__obrazek {
+    background-image: url(obrazky/loga/SVG/Kladne\ Nuly_logo_cerne.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    min-height: 250px;
+    min-height: 180px;
     width: auto;
 }
 
@@ -41,9 +57,8 @@ body {
     display: none;
 }
 
-
 .download_button {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--barva-bila);
     border: 2px solid var(--barva-logo);;
     color:var(--barva-logo);
     margin: 50px;
@@ -54,7 +69,7 @@ body {
 }
 
 .download_button:hover {
-    background-color: rgb(236, 235, 235);
+    background-color: var(--barva-svetle-seda);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -64,7 +79,7 @@ body {
 }  
 
 .kontakty__popisek {
-    font-weight: 400;  
+    font-weight: 600;  
 }
 
 .kontakty__popisek::after {
@@ -88,9 +103,11 @@ a:hover {
 
 
 
-  /* ----------- Tablety ---------- */
+  /* ----------- Tablety ---------- 
 
   @media (min-width: 600px) {
+
+    padding pro body
 
     .logo {
         background-image: url(obrazky/Kladne_Nuly-naSirku.svg);
@@ -132,7 +149,7 @@ a:hover {
 }
 
 
- /* ----------- PC ---------- */
+ /* ----------- PC ---------- 
 
 
  @media (min-width: 900px) {
@@ -154,3 +171,5 @@ a:hover {
         height: auto;
     }
 }
+
+*/
